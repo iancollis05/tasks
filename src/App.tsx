@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import "./App.css";
-
+import img from "./cat.jpg";
 function App(): React.JSX.Element {
     return (
         <div className="App">
@@ -48,10 +48,7 @@ function App(): React.JSX.Element {
             </div>
 
             <p>Ian Collis</p>
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88UGwbxf1IIprd3C5MtEZ6U5gq5xNyVFAKA&s"
-                alt="How I feel being in ROTC"
-            />
+            <img src={img} alt="How I feel being in ROTC" />
 
             <p>Hello World!</p>
             <p> Is this a W list</p>
