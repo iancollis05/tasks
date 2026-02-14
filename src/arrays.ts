@@ -35,7 +35,15 @@ export function tripleNumbers(numbers: number[]): number[] {
  * the number cannot be parsed as an integer, convert it to 0 instead.
  */
 export function stringsToIntegers(numbers: string[]): number[] {
-    return [];
+    const converted = numbers.map((s: string): number => {
+        let result = parseInt(s, 10);
+        if (isNaN(result)) {
+            return 0;
+        } else {
+            return result;
+        }
+    });
+    return converted;
 }
 
 /**
@@ -46,7 +54,10 @@ export function stringsToIntegers(numbers: string[]): number[] {
  */
 // Remember, you can write functions as lambdas too! They work exactly the same.
 export const removeDollars = (amounts: string[]): number[] => {
-    return [];
+    return amounts.map((s: string): number => {
+        const parsed = parseInt(s.replace("$", ""), 10);
+        return isNaN(parsed) ? 0 : parsed;
+    });
 };
 
 /**
@@ -55,7 +66,17 @@ export const removeDollars = (amounts: string[]): number[] => {
  * in question marks ("?").
  */
 export const shoutIfExclaiming = (messages: string[]): string[] => {
-    return [];
+    let shoutArr: string[] = [];
+    for (let i = 0; i < messages.length; i++) {
+        if (messages[i].endsWith("!")) {
+            shoutArr.push(messages[i].toUpperCase());
+        } else if (messages[i].endsWith("?")) {
+            continue;
+        } else {
+            shoutArr.push(messages[i]);
+        }
+    }
+    return shoutArr;
 };
 
 /**
@@ -63,7 +84,13 @@ export const shoutIfExclaiming = (messages: string[]): string[] => {
  * 4 letters long.
  */
 export function countShortWords(words: string[]): number {
-    return 0;
+    let count: number = 0;
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].length < 4) {
+            count = count + 1;
+        }
+    }
+    return count;
 }
 
 /**
@@ -72,7 +99,13 @@ export function countShortWords(words: string[]): number {
  * then return true.
  */
 export function allRGB(colors: string[]): boolean {
-    return false;
+    for (let i = 0; i < colors.length; i++) {
+        if (colors[i] != "red" && colors[i] != "blue" && colors[i] != "green") {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 /**
@@ -83,7 +116,18 @@ export function allRGB(colors: string[]): boolean {
  * And the array [] would become "0=0".
  */
 export function makeMath(addends: number[]): string {
-    return "";
+    if (addends.length == 0) {
+        return "0=0";
+    }
+
+    let sum = 0;
+    for (let i = 0; i < addends.length; i++) {
+        sum = sum + addends[i];
+    }
+
+    let equation = addends.join("+");
+
+    return sum + "=" + equation;
 }
 
 /**
