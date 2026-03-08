@@ -72,6 +72,14 @@ function App(): React.JSX.Element {
                 Log Hello World
             </Button>
             <hr></hr>
+            {/* <DoubleHalf></DoubleHalf>
+            <hr></hr>
+         <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
+            <hr></hr>
+            <ShoveBox></ShoveBox> */}
+            <hr></hr>
             <Counter></Counter>
             <hr></hr>
             <RevealAnswer></RevealAnswer>
