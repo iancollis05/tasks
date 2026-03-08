@@ -1,8 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { Counter } from "./components/Counter";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { ChangeType } from "./components/ChangeType";
+import { StartAttempt } from "./components/StartAttempt";
 import "./App.css";
 import img from "./cat.jpg";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
 function App(): React.JSX.Element {
     return (
         <div className="App">
@@ -65,7 +71,18 @@ function App(): React.JSX.Element {
             >
                 Log Hello World
             </Button>
-
+            <hr></hr>
+            <Counter></Counter>
+            <hr></hr>
+            <RevealAnswer></RevealAnswer>
+            <hr></hr>
+            <ChangeType></ChangeType>
+            <hr></hr>
+            <StartAttempt></StartAttempt>
+            <hr></hr>
+            <TwoDice></TwoDice>
+            <hr></hr>
+            <CycleHoliday></CycleHoliday>
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
