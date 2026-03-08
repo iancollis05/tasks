@@ -9,6 +9,11 @@ import "./App.css";
 import img from "./cat.jpg";
 import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+
 function App(): React.JSX.Element {
     return (
         <div className="App">
@@ -72,13 +77,13 @@ function App(): React.JSX.Element {
                 Log Hello World
             </Button>
             <hr></hr>
-            {/* <DoubleHalf></DoubleHalf>
+            <DoubleHalf></DoubleHalf>
             <hr></hr>
-         <ChooseTeam></ChooseTeam>
+            <ChooseTeam></ChooseTeam>
             <hr></hr>
             <ColoredBox></ColoredBox>
             <hr></hr>
-            <ShoveBox></ShoveBox> */}
+            <ShoveBox></ShoveBox>
             <hr></hr>
             <Counter></Counter>
             <hr></hr>
