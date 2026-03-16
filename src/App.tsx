@@ -13,7 +13,11 @@ import { DoubleHalf } from "./bad-components/DoubleHalf";
 import { ChooseTeam } from "./bad-components/ChooseTeam";
 import { ColoredBox } from "./bad-components/ColoredBox";
 import { ShoveBox } from "./bad-components/ShoveBox";
-
+import { CheckAnswer } from "./form-components/CheckAnswer";
+import { GiveAttempts } from "./form-components/GiveAttempts";
+import { EditMode } from "./form-components/EditMode";
+import { ChangeColor } from "./form-components/ChangeColor";
+import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion";
 function App(): React.JSX.Element {
     return (
         <div className="App">
@@ -96,6 +100,20 @@ function App(): React.JSX.Element {
             <TwoDice></TwoDice>
             <hr></hr>
             <CycleHoliday></CycleHoliday>
+            <hr></hr>
+            <CheckAnswer expectedAnswer="42"></CheckAnswer>
+            <hr></hr>
+            <GiveAttempts></GiveAttempts>
+            <hr></hr>
+            <EditMode></EditMode>
+            <hr></hr>
+            <ChangeColor></ChangeColor>
+            <hr></hr>
+            <MultipleChoiceQuestion
+                options={["Alpha", "Gamma", "Beta"]}
+                expectedAnswer="Alpha"
+            />
+
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
