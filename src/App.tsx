@@ -10,7 +10,7 @@ function App(): React.JSX.Element {
                 Ian Collis UD CISC275 with React Hooks and TypeScript
             </header>
 
-            <div style={{ backgroundColor: "red", padding: "10px" }}></div>
+            {/* <div style={{ backgroundColor: "red", padding: "10px" }}></div> */}
 
             <h1>I still like this image</h1>
             <img
