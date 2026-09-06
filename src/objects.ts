@@ -1,4 +1,3 @@
-import { networkInterfaces } from "os";
 import { Question, QuestionType } from "./interfaces/question";
 
 /**
