@@ -2,6 +2,12 @@ import React from "react";
 import "./App.css";
 import zazuImage from "./thousandyardzazu.webp";
 import { Button, Container, Row, Col } from "react-bootstrap";
+import { ChangeType } from "./components/ChangeType";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
 
 function App(): React.JSX.Element {
     return (
@@ -60,6 +66,18 @@ function App(): React.JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Hello World!
             </p>
+            <hr></hr>
+            <Counter></Counter>
+            <hr></hr>
+            <RevealAnswer></RevealAnswer>
+            <hr></hr>
+            <ChangeType></ChangeType>
+            <hr></hr>
+            <StartAttempt></StartAttempt>
+            <hr></hr>
+            <TwoDice></TwoDice>
+            <hr></hr>
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
