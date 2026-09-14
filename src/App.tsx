@@ -3,11 +3,11 @@ import "./App.css";
 import zazuImage from "./thousandyardzazu.webp";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import { ChangeType } from "./components/ChangeType";
-import { RevealAnswer } from "./components/RevealAnswer";
-import { StartAttempt } from "./components/StartAttempt";
 import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
 
 function App(): React.JSX.Element {
     return (
@@ -68,15 +68,15 @@ function App(): React.JSX.Element {
             </p>
             <hr></hr>
             <Counter></Counter>
-            <hr />
+            <hr></hr>
             <RevealAnswer></RevealAnswer>
-            <hr />
-            <StartAttempt></StartAttempt>
-            <hr />
-            <TwoDice></TwoDice>
-            <hr />
+            <hr></hr>
             <ChangeType></ChangeType>
-            <hr />
+            <hr></hr>
+            <StartAttempt></StartAttempt>
+            <hr></hr>
+            <TwoDice></TwoDice>
+            <hr></hr>
             <CycleHoliday></CycleHoliday>
         </div>
     );
